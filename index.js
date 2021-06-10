@@ -18,7 +18,7 @@ The function should:
 function createMenuItem(name, price, category){
     return {name, price, category};
 }
-
+console.log('task 1a', createMenuItem());
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1b: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Invoke your function!
 Test your createMenuItems function by doing the following:
@@ -48,7 +48,15 @@ export const burger = {
   name: "Burger", 
   price: 18, 
   category: "Lunch", 
-  /*Your code here*/
+  discount: function(string) {
+    if (string === "teacher"){
+      return (this.price * 0.75);
+    } else if (string === "student"){
+      return (this.price * 0.90);
+    } else {
+      return (this.price);
+    },
+  }
 }
 
 
