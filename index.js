@@ -152,8 +152,9 @@ Use the getReviewsByRating function below to do the following:
   ]
 */
 
- function getReviewByRating(/* code here */) {
-    /* code here */
+ function getReviewByRating(array, rating) {
+   for (let i = 0; i<something.length, i++)
+    if (array[i].rating > 4.0){return array[i]}
   }
 
   
