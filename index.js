@@ -19,6 +19,7 @@ function createMenuItem(name, price, category){
     return {name, price, category};
 }
 console.log('task 1a', createMenuItem());
+
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1b: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Invoke your function!
 Test your createMenuItems function by doing the following:
@@ -49,15 +50,14 @@ export const burger = {
   price: 18, 
   category: "Lunch", 
   discount: function(string) {
-    if (string === "teacher"){
+    if (string === "teacher" || string === "student"){
       return (this.price * 0.75);
-    } else if (string === "student"){
-      return (this.price * 0.90);
     } else {
-      return (this.price);
-    },
+      return (this.price * 0.90);
+    }
   }
-}
+};
+console.log('task 2', burger.discount("student"));
 
 
 
@@ -77,7 +77,7 @@ const reviews = [
 Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
-
+console.log('task 3:', reviews[5].feedback);
 
 
 
@@ -86,7 +86,8 @@ Using the reviews array above do the following: (no function needed)
   1. Following the same format (name, rating, feedback), add a new fictitious review object to the reviews array
   2. log the whole array to the console, make sure the new review is inside of it   
 */
-
+reviews.push({name:"Rick", rating:3.5, feedback:"blah"});
+console.log('task 4', reviews);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
